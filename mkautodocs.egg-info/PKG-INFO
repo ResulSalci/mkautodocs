@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: mkautodocs
+Version: 0.3.4.3
+Summary: a python package for documentation
+Description-Content-Type: text/markdown
+
+# Mkautodocs
+
+Mkautodocs is a Python library for documentations projects
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install mkautodocs.
+
+```bash
+pip install mkautodocs
+```
+
+## Usage
+
+directory_name : root folder of python file's
+
+for example:
+```bash
+my_project:
+     src:
+        routes:
+               -routes.py
+        - main.py
+     Dockerfile
+     docker-compose.yml
+```
+for this project , our directory_name must be "src"
+
+
+
+### Creating New Documentation
+
+```bash
+mkautodocs new directory_name
+```
+
+It creates a folder which is name's "docs" and it contains .md files of python files
+
+### Updating Documentation
+```bash
+mkautodocs scan directory_name
+```
+
+### Building Documentation
+```bash
+mkautodocs build
+```
+It creates static codes of md files in "site" folder and a dockerfile creating inside this folder. After that writes requirement commands inside of Dockerfile.
+
+Warning:if you use docker-compose.yml file,  You must entegrate this Dockerfile in them.
+
+### Learn package's version
+```bash
+mkautodocs v
+```
+
+# WARNING
+### in a python file, cannot be endpoints and functions together.
+
+
+
+[MIT](https://choosealicense.com/licenses/mit/)

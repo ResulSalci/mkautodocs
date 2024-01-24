@@ -1,0 +1,12 @@
+setup.py
+mkautodocs/README.md
+mkautodocs/__init__.py
+mkautodocs/cli.py
+mkautodocs/functions.py
+mkautodocs/parse.py
+mkautodocs.egg-info/PKG-INFO
+mkautodocs.egg-info/SOURCES.txt
+mkautodocs.egg-info/dependency_links.txt
+mkautodocs.egg-info/entry_points.txt
+mkautodocs.egg-info/requires.txt
+mkautodocs.egg-info/top_level.txt
