@@ -1,5 +1,5 @@
-*.setup.cfg
+setup.cfg
 
-*.PKG-INFO
+PKG-INFO
 
-*.mkautodocs.egg-info
+mkautodocs.egg-info
